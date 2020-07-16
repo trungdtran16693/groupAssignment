@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <script type="text/javascript" src="jsFiles/jquery.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <style>
+        .aboutUsSection{
+            position: relative;
+            z-index: 1;
+            color: saddlebrown;
+        }
+        .aboutUsSection:before{
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-image: url("cssFiles/images/aboutUsBackground.jpg");
+            opacity: .3;
+        }
+        .pageFooter{
+            background-image: url("cssFiles/images/footer-bg.jpg");
+            overflow: hidden;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="cssFiles/images/services-icon1.png">
+    &nbsp;
+    &nbsp;
+    <a style="color: saddlebrown" class="navbar-brand" href="home.html"><i>The <br> <b>GLORIOUS PHOENIX</b></i></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="home.html">HOME<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="aboutUs.html">ABOUT US</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    OUR MENU
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="currentMenu.html">CURRENT MENU</a>
+                    <a class="dropdown-item" href="upcomingMenu.html">UPCOMING MENU</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    BLOG
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="https://dailycoffeenews.com/">DAILY COFFEE NEWS</a>
+                    <a class="dropdown-item" href="http://www.dearcoffeeiloveyou.com/">DEAR COFFEE I LOVE YOU</a>
+                    <a class="dropdown-item" href="http://www.coffeegeek.com/">COFFEE GEEK</a>
+                </div>
+            </li>
+        </ul>
+        <button style="background-color: saddlebrown; color: white; border-radius: 20%" onclick="window.location.href='bookATable.html'" class="btn btn-outline-success my-2 my-sm-0">Book a table</button>
+    </div>
+</nav>
+
+<section class="aboutUsSection">
+    <h3 style="text-align: center">
+        <br>
+        <br>
+        Glorious Phoenix Coffee – The Only Dedicated to / Specially for Creativity
+        <br>
+    </h3>
+    <p style="text-align: center; padding: 5%;">
+        WE GROW OUR OWN – By harvesting coffee bean from our own plantation in Vietnam’s Buon Ma Thuot Province and
+        packing them in our own factories, we are able to ensure the consistent quality of our coffee products.
+        <br>
+        <br>
+        WE ARE GREEN – We invest in sustainable and renewable agriculture.
+        <br>
+        <br>
+        This allows us to produce some of the world’s most delicious coffees while caring for the environment.
+        <br>
+        <br>
+        WE ARE INTERNATIONAL – We established an international office in Singapore to share our coffee with the world.
+        <br>
+        <br>
+        You can now find Glorious Phoenix's coffee products in more than 50 countries worldwide.
+        <br>
+        <br>
+    </p>
+</section>
+
+<section class="pageFooter">
+    <div class="logoAndSocialNetworkIcons">
+        <div style="float: left" class="footerLogo">
+            <img style="float: left" src="cssFiles/images/footer-logo.png">
+            <h3 style="color: white; float: left">The Glorious Phoenix</h3>
+        </div>
+        <div style="float: right; display: inline-block" class="socialNetworkIcons">
+            <button style="padding: 10px; background-color: black; color: white; border-radius: 50%" onclick="window.location.href='https://www.facebook.com/'"><b>&nbsp;f &nbsp;</b></button>
+            &nbsp;
+            <button style="padding: 10px; background-color: black; color: white; border-radius: 50%" onclick="window.location.href='https://www.twitter.com/'"><b>&nbsp;t &nbsp;</b></button>
+            &nbsp;
+            <button style="padding: 10px; background-color: black; color: white; border-radius: 50%" onclick="window.location.href='https://www.google.com/'">G+</button>
+            &nbsp;
+            <button style="padding: 10px; background-color: black; color: white; border-radius: 100%" onclick="window.location.href='https://www.linkedin.com/'"><b>in</b></button>
+            &nbsp;
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div style="display: inline-block; color: white" class="lowerFooter">
+        <div style="float: left; width: 30%; margin: 20px">
+            <h3>ABOUT COFFEE SHOP</h3>
+            <h1>___</h1>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus condiintum mauris a quam sodales rutrum.</p>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus condiintum mauris a quam sodales</p>
+        </div>
+        <div style="float: left; width: 20%; margin: 20px">
+            <h3>QUICK LINKS</h3>
+            <h1>___</h1>
+            <a style="color: white;" href="home.html">> Home</a>
+            <br>
+            <br>
+            <a style="color: white;" href="aboutUs.html">> About Us </a>
+            <br>
+            <br>
+            <a style="color: white;" href="currentMenu.html">> Current Menu </a>
+            <br>
+            <br>
+            <a style="color: white;" href="upcomingMenu.html">> Upcoming Menu </a>
+        </div>
+        <div style="float: right; width: 30%; margin: 20px">
+            <h3>CONTACT INFO</h3>
+            <h1>___</h1>
+            <p>Address: No.234, Lane 346, Ton That Thuyet Street, Cau Giay District, Hanoi, Vietnam.</p>
+            <br>
+            <p>
+                Phone: +84 2345 555 999
+                <br>
+                <br>
+                E-mail: info@gloriousphoenixcoffee.com
+                <br>
+                <br>
+                Website: http://gloriousphoenixcoffee.com
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>

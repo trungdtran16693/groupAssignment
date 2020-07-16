@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Current Menu</title>
+    <script type="text/javascript" src="jsFiles/jquery.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <style>
+        .currentMenuSection{
+            position: relative;
+            z-index: 1;
+            padding: 10px;
+            text-align: center;
+            overflow: hidden
+        }
+        .currentMenuSection:before{
+            background-image: url("cssFiles/images/menuBackground.jpg");
+            background-size: cover;
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: .3;
+        }
+        .pageFooter{
+            background-image: url("cssFiles/images/footer-bg.jpg");
+            overflow: hidden;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="cssFiles/images/services-icon1.png">
+    &nbsp;
+    &nbsp;
+    <a style="color: saddlebrown" class="navbar-brand" href="home.html"><i>The <br> <b>GLORIOUS PHOENIX</b></i></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="home.html">HOME<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="aboutUs.html">ABOUT US</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    OUR MENU
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="currentMenu.html">CURRENT MENU</a>
+                    <a class="dropdown-item" href="upcomingMenu.html">UPCOMING MENU</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    BLOG
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="https://dailycoffeenews.com/">DAILY COFFEE NEWS</a>
+                    <a class="dropdown-item" href="http://www.dearcoffeeiloveyou.com/">DEAR COFFEE I LOVE YOU</a>
+                    <a class="dropdown-item" href="http://www.coffeegeek.com/">COFFEE GEEK</a>
+                </div>
+            </li>
+        </ul>
+        <button style="background-color: saddlebrown; color: white; border-radius: 20%" onclick="window.location.href='bookATable.html'" class="btn btn-outline-success my-2 my-sm-0">Book a table</button>
+    </div>
+</nav>
+<script type="text/javascript">
+    function addToCart() {
+        alert("Thank you for choosing Glorious Phoenix Coffee. Your item has been added to cart.");
+    }
+</script>
+<section class="currentMenuSection">
+    <h3 style="text-align: center">
+        OUR CURRENT MENU
+    </h3>
+    <h2 style="text-align: center">
+        Products that are already available
+    </h2>
+    <div style="display: inline-block;text-align: center">
+        <div style="margin: 30px; float: left">
+            <img src="cssFiles/images/productList.jpg">
+            <h3 class="product-name">
+                AMERICAN COFFEE
+            </h3>
+            <p>
+                $6.99
+            </p>
+            <button onclick="addToCart()" style="
+                padding: 10px;
+                border-radius: 20px;
+                border: 2px solid saddlebrown">
+                ADD TO CART
+            </button>
+        </div>
+        <div style="margin: 30px; float: left">
+            <img src="cssFiles/images/productList.jpg">
+            <h3>
+                COST RICA LIGHT
+            </h3>
+            <p>
+                $6.99
+            </p>
+            <button onclick="addToCart()" style="
+                padding: 10px;
+                border-radius: 20px;
+                border: 2px solid saddlebrown">
+                ADD TO CART
+            </button>
+        </div>
+        <div style="margin: 30px; float: left">
+            <img src="cssFiles/images/productList.jpg">
+            <h3 class="product-name">
+                JAMAICAN MOUNTAN
+            </h3>
+            <p>
+                $6.99
+            </p>
+            <button onclick="addToCart()" style="
+                padding: 10px;
+                border-radius: 20px;
+                border: 2px solid saddlebrown">
+                ADD TO CART
+            </button>
+        </div>
+        <div style="margin: 30px; float: left">
+            <img src="cssFiles/images/productList.jpg">
+            <h3>
+                ETHOPIAN FANCY
+            </h3>
+            <p>
+                $6.99
+            </p>
+            <button onclick="addToCart()" style="
+                padding: 10px;
+                border-radius: 20px;
+                border: 2px solid saddlebrown">
+                ADD TO CART
+            </button>
+        </div>
+    </div>
+</section>
+<section class="pageFooter">
+    <div class="logoAndSocialNetworkIcons">
+        <div style="float: left" class="footerLogo">
+            <img style="float: left" src="cssFiles/images/footer-logo.png">
+            <h3 style="color: white; float: left">The Glorious Phoenix</h3>
+        </div>
+        <div style="float: right; display: inline-block" class="socialNetworkIcons">
+            <button style="padding: 10px; background-color: black; color: white; border-radius: 50%" onclick="window.location.href='https://www.facebook.com/'"><b>&nbsp;f &nbsp;</b></button>
+            &nbsp;
+            <button style="padding: 10px; background-color: black; color: white; border-radius: 50%" onclick="window.location.href='https://www.twitter.com/'"><b>&nbsp;t &nbsp;</b></button>
+            &nbsp;
+            <button style="padding: 10px; background-color: black; color: white; border-radius: 50%" onclick="window.location.href='https://www.google.com/'">G+</button>
+            &nbsp;
+            <button style="padding: 10px; background-color: black; color: white; border-radius: 100%" onclick="window.location.href='https://www.linkedin.com/'"><b>in</b></button>
+            &nbsp;
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div style="display: inline-block; color: white" class="lowerFooter">
+        <div style="float: left; width: 30%; margin: 20px">
+            <h3>ABOUT COFFEE SHOP</h3>
+            <h1>___</h1>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus condiintum mauris a quam sodales rutrum.</p>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus condiintum mauris a quam sodales</p>
+        </div>
+        <div style="float: left; width: 20%; margin: 20px">
+            <h3>QUICK LINKS</h3>
+            <h1>___</h1>
+            <a style="color: white;" href="home.html">> Home</a>
+            <br>
+            <br>
+            <a style="color: white;" href="aboutUs.html">> About Us </a>
+            <br>
+            <br>
+            <a style="color: white;" href="currentMenu.html">> Current Menu </a>
+            <br>
+            <br>
+            <a style="color: white;" href="upcomingMenu.html">> Upcoming Menu </a>
+        </div>
+        <div style="float: right; width: 30%; margin: 20px">
+            <h3>CONTACT INFO</h3>
+            <h1>___</h1>
+            <p>Address: No.234, Lane 346, Ton That Thuyet Street, Cau Giay District, Hanoi, Vietnam.</p>
+            <br>
+            <p>
+                Phone: +84 2345 555 999
+                <br>
+                <br>
+                E-mail: info@gloriousphoenixcoffee.com
+                <br>
+                <br>
+                Website: http://gloriousphoenixcoffee.com
+            </p>
+        </div>
+
+    </div>
+
+</section>
+</body>
+</html>

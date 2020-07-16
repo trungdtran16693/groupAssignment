@@ -17,13 +17,13 @@
             Customers trust us
         </h2>
         <div style="width: 100%; text-align: center">
-        <button style="padding: 15px; background-color: saddlebrown; color: white; border-radius: 20px">
+        <button onclick="window.location.href='https://www.elabcommunications.com/testimonials'" style="padding: 15px; background-color: saddlebrown; color: white; border-radius: 20px">
                 View all testimonials
         </button>
         </div>
     </div>
     <div style="float: left">
-        <img style="max-width: 80%;max-height: 80%" src="Testinomials.JPG">
+        <img style="max-width: 80%;max-height: 80%" src="../cssFiles/images/Testinomials.JPG">
     </div>
     <div style="float: right;width: 30%">
         <h3>
@@ -37,15 +37,24 @@
         </p>
         <br>
         <div>
-            <button style="margin: 5px;padding: 10px;border-radius: 15px;background-color: saddlebrown;color: white">
+            <script type="text/javascript">
+                function becomeOurDealer() {
+                    alert("Thank you for choosing us. We'll contact you soon.");
+                }
+            </script>
+            <button onclick="becomeOurDealer()" style="margin: 5px;padding: 10px;border-radius: 15px;background-color: saddlebrown;color: white">
                     Become a Dealer
             </button>
-            <button style="margin: 5px;padding: 10px;border-radius: 15px;background-color: saddlebrown;color: white">
+            <script type="text/javascript">
+                function contactUs() {
+                    alert("Please call us on +84 4454 3456 or drop an e-mail to info@gloriousphoenixcoffee.com");
+                }
+            </script>
+            <button onclick="contactUs()" style="margin: 5px;padding: 10px;border-radius: 15px;background-color: saddlebrown;color: white">
                     Contact us
             </button>
         </div>
     </div>
 </section>
-
 </body>
 </html>

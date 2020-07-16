@@ -5,7 +5,7 @@
     <title>abc</title>
     <style>
         .mainSection1{
-            background-image: url("fttbackground.jpg");
+            background-image: url("../cssFiles/images/fttbackground.jpg");
             overflow: hidden;
         }
         #wholeContainer{
@@ -44,17 +44,17 @@
             <h3 style="color: white">
                 Feel the taste
             </h3>
-            <h1 style="color: white">
+            <h1 style="color: yellow">
                 More than coffee & Tea
             </h1>
             <h3 style="color: yellow">
                 Flat 20% Discount
             </h3>
             <p style="color: white">
-                Sed a dui at sapien porttitor placer pendssee nutrumorem efficitur nibh condimentum.
+                Glorious Phoenix's Coffee will bring you alertness!
             </p>
             <br>
-            <button type="button" style="
+            <button onclick="window.location.href='currentMenu.html'" type="button" style="
                 background-color: saddlebrown;
                 padding: 10px;
                 border-radius: 15px;
@@ -94,12 +94,17 @@
                 <br>
                 <br>
                 <div style="text-align: center">
-                <button type="submit" style="
+                <script type="text/javascript">
+                    function submitTableBooking() {
+                        alert("Thank you for choosing Glorious Phoenix Coffee. Your table has been reserved.");
+                    }
+                </script>
+                <button onclick="submitTableBooking()" type="submit" style="
                     background-color: saddlebrown;
                     color: white;
                     padding: 12px;
                     border-radius: 15px">
-                    Book a table
+                    Book now!
                 </button>
                 </div>
                 <br>

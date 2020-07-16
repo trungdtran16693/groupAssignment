@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <script type="text/javascript" src="jsFiles/jquery.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <style>
+        .mainSection1{
+            background-image: url("cssFiles/images/fttbackground.jpg");
+            background-size: cover;
+            overflow: hidden;
+        }
+        #wholeContainer{
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        #leftContainer{
+            float: left;
+            width: 40%;
+        }
+        #rightContainer{
+            float: right;
+            width: 30%;
+        }
+        #bookingPopup{
+            background-color: orange;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .popupInputField{
+            display: block;
+            background-color: white;
+            width: 95%;
+            padding: 5px;
+            color: saddlebrown;
+            border-radius: 5px;
+        }
+        .pageFooter{
+            background-image: url("cssFiles/images/footer-bg.jpg");
+            overflow: hidden;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="cssFiles/images/services-icon1.png">
+    &nbsp;
+    &nbsp;
+    <a style="color: saddlebrown" class="navbar-brand" href="home.html"><i>The <br> <b>GLORIOUS PHOENIX</b></i></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="home.html">HOME<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="aboutUs.html">ABOUT US</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    OUR MENU
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="currentMenu.html">CURRENT MENU</a>
+                    <a class="dropdown-item" href="upcomingMenu.html">UPCOMING MENU</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    BLOG
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="https://dailycoffeenews.com/">DAILY COFFEE NEWS</a>
+                    <a class="dropdown-item" href="http://www.dearcoffeeiloveyou.com/">DEAR COFFEE I LOVE YOU</a>
+                    <a class="dropdown-item" href="http://www.coffeegeek.com/">COFFEE GEEK</a>
+                </div>
+            </li>
+        </ul>
+        <button style="background-color: saddlebrown; color: white; border-radius: 20%" onclick="window.location.href='bookATable.html'" class="btn btn-outline-success my-2 my-sm-0">Book a table</button>
+    </div>
+</nav>
+<section class="mainSection1">
+    <div id="wholeContainer">
+        <div id="leftContainer">
+            <br>
+            <br>
+            <br>
+            <h3 style="color: white">
+                Feel the taste
+            </h3>
+            <h1 style="color: yellow">
+                <br>
+                More than coffee & Tea
+                <br>
+            </h1>
+            <h3 style="color: yellow">
+                Flat 20% Discount
+            </h3>
+            <p style="color: lightgray">
+                <br>
+                <br>
+                Glorious Phoenix Coffee will bring alertness!
+            </p>
+            <br>
+            <button onclick="window.location.href='currentMenu.html'" type="button" style="
+                background-color: saddlebrown;
+                padding: 10px;
+                border-radius: 15px;
+                text-align: center;
+                color: white">
+                Shop now!
+            </button>
+        </div>
+        <div id="rightContainer">
+            <form id="bookingPopup">
+                <h3 style="
+                text-align: center;
+                color: white;
+                ">
+                    Reserve
+                </h3>
+                <h1 style="
+                text-align: center;
+                color: white;
+                ">
+                    Your Table
+                </h1>
+                <input type="text" name="name" placeholder="Your Name" class="popupInputField">
+                </input>
+                <br>
+                <input type="email" name="email" placeholder="Your Email" class="popupInputField">
+                </input>
+                <br>
+                <input type="number" name="phone" placeholder="Your Phone" class="popupInputField">
+                </input>
+                <br>
+                <input type="date" name="date" placeholder="mm/dd/yyyy" class="popupInputField">
+                </input>
+                <br>
+                <input type="time" name="time" class="popupInputField">
+                </input>
+                <br>
+                <br>
+                <div style="text-align: center">
+                    <script type="text/javascript">
+                        function submitTableBooking() {
+                            alert("Thank you for choosing Glorious Phoenix Coffee. Your table has been reserved.");
+                        }
+                    </script>
+                    <button onclick="submitTableBooking()" type="submit" style="
+                    background-color: saddlebrown;
+                    color: white;
+                    padding: 12px;
+                    border-radius: 15px">
+                        Book now!
+                    </button>
+                </div>
+                <br>
+            </form>
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+    function addToCart() {
+        alert("Thank you for choosing Glorious Phoenix Coffee. Your item has been added to cart.");
+    }
+</script>
+<section style="
+    padding: 10px;
+    background-color: lightgray;
+    text-align: center;
+    overflow: hidden"
+         class="trungSection2">
+    <h3 style="text-align: center">
+        Choose your coffee
+    </h3>
+    <h2 style="text-align: center">
+        Products
+    </h2>
+    <div style="display: inline-block;text-align: center">
+        <div style="float: left" class="product">
+            <img src="cssFiles/images/productList.jpg">
+            <h3 class="product-name">
+                AMERICAN COFFEE
+            </h3>
+            <p>
+                $6.99
+            </p>
+            <button onclick="addToCart()" style="
+                padding: 10px;
+                border-radius: 20px;
+                border: 2px solid saddlebrown">
+                ADD TO CART
+            </button>
+        </div>
+        <div style="float: left">
+            <img src="cssFiles/images/productList.jpg">
+            <h3>
+                COST RICA LIGHT
+            </h3>
+            <p>
+                $6.99
+            </p>
+            <button onclick="addToCart()" style="
+                padding: 10px;
+                border-radius: 20px;
+                border: 2px solid saddlebrown">
+                ADD TO CART
+            </button>
+        </div>
+        <div style="float: left">
+            <img src="cssFiles/images/productList.jpg">
+            <h3 class="product-name">
+                JAMAICAN MOUNTAN
+            </h3>
+            <p>
+                $6.99
+            </p>
+            <button onclick="addToCart()" style="
+                padding: 10px;
+                border-radius: 20px;
+                border: 2px solid saddlebrown">
+                ADD TO CART
+            </button>
+        </div>
+        <div style="float: left">
+            <img src="cssFiles/images/productList.jpg">
+            <h3>
+                ETHOPIAN FANCY
+            </h3>
+            <p>
+                $6.99
+            </p>
+            <button onclick="addToCart()" style="
+                padding: 10px;
+                border-radius: 20px;
+                border: 2px solid saddlebrown">
+                ADD TO CART
+            </button>
+        </div>
+    </div>
+</section>
+<section style="text-align: center; padding: 60px;display: inline-block" class="trungSection3">
+    <div style="float: left; width: 20%">
+        <h2>
+            More than
+        </h2>
+        <h1 style="font-family: 'American Typewriter';font-size: 70px;color: saddlebrown">
+            999+
+        </h1>
+        <h2 style="font-family: 'American Typewriter';font-size: 35px">
+            Customers trust us
+        </h2>
+        <div style="width: 100%; text-align: center">
+            <button onclick="window.location.href='https://www.elabcommunications.com/testimonials'" style="padding: 15px; background-color: saddlebrown; color: white; border-radius: 20px">
+                View all testimonials
+            </button>
+        </div>
+    </div>
+    <div style="float: left">
+        <img style="max-width: 80%;max-height: 80%" src="cssFiles/images/Testinomials.JPG">
+    </div>
+    <div style="float: right;width: 30%">
+        <h3>
+            Become
+        </h3>
+        <h1>
+            Our Dealer
+        </h1>
+        <p style="color: blueviolet;">
+            Sed a dui at sapien porttitor placer pendssee rutrumor efficitur nibh condimentum aci Nam lorem libero, impimat, fermentumy vehicula nulla. Aenean gravida lnon lorem egesta tristque extin. Morbiat libero eleifematae vitae, lacnelis.
+        </p>
+        <br>
+        <div>
+            <script type="text/javascript">
+                function becomeOurDealer() {
+                    alert("Thank you for choosing us. We'll contact you soon.");
+                }
+            </script>
+            <button onclick="becomeOurDealer()" style="margin: 5px;padding: 10px;border-radius: 15px;background-color: saddlebrown;color: white">
+                Become a Dealer
+            </button>
+            <script type="text/javascript">
+                function contactUs() {
+                    alert("Please call us on +84 4454 3456 or drop an e-mail to info@gloriousphoenixcoffee.com");
+                }
+            </script>
+            <button onclick="contactUs()" style="margin: 5px;padding: 10px;border-radius: 15px;background-color: saddlebrown;color: white">
+                Contact us
+            </button>
+        </div>
+    </div>
+</section>
+<section class="pageFooter">
+    <div class="logoAndSocialNetworkIcons">
+        <div style="float: left" class="footerLogo">
+            <img style="float: left" src="cssFiles/images/footer-logo.png">
+            <h3 style="color: white; float: left">The Glorious Phoenix</h3>
+        </div>
+        <div style="float: right; display: inline-block" class="socialNetworkIcons">
+            <button style="padding: 10px; background-color: black; color: white; border-radius: 50%" onclick="window.location.href='https://www.facebook.com/'"><b>&nbsp;f &nbsp;</b></button>
+            &nbsp;
+            <button style="padding: 10px; background-color: black; color: white; border-radius: 50%" onclick="window.location.href='https://www.twitter.com/'"><b>&nbsp;t &nbsp;</b></button>
+            &nbsp;
+            <button style="padding: 10px; background-color: black; color: white; border-radius: 50%" onclick="window.location.href='https://www.google.com/'">G+</button>
+            &nbsp;
+            <button style="padding: 10px; background-color: black; color: white; border-radius: 100%" onclick="window.location.href='https://www.linkedin.com/'"><b>in</b></button>
+            &nbsp;
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div style="display: inline-block; color: white" class="lowerFooter">
+        <div style="float: left; width: 30%; margin: 20px">
+            <h3>ABOUT COFFEE SHOP</h3>
+            <h1>___</h1>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus condiintum mauris a quam sodales rutrum.</p>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus condiintum mauris a quam sodales</p>
+        </div>
+        <div style="float: left; width: 20%; margin: 20px">
+            <h3>QUICK LINKS</h3>
+            <h1>___</h1>
+            <a style="color: white;" href="home.html">> Home</a>
+            <br>
+            <br>
+            <a style="color: white;" href="aboutUs.html">> About Us </a>
+            <br>
+            <br>
+            <a style="color: white;" href="currentMenu.html">> Current Menu </a>
+            <br>
+            <br>
+            <a style="color: white;" href="upcomingMenu.html">> Upcoming Menu </a>
+        </div>
+        <div style="float: right; width: 30%; margin: 20px">
+            <h3>CONTACT INFO</h3>
+            <h1>___</h1>
+            <p>Address: No.234, Lane 346, Ton That Thuyet Street, Cau Giay District, Hanoi, Vietnam.</p>
+            <br>
+            <p>
+                Phone: +84 2345 555 999
+                <br>
+                <br>
+                E-mail: info@gloriousphoenixcoffee.com
+                <br>
+                <br>
+                Website: http://gloriousphoenixcoffee.com
+            </p>
+        </div>
+
+    </div>
+
+</section>
+</body>
+</html>
