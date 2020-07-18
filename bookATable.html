@@ -8,9 +8,30 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <style>
         .bookingSection{
-            background-image: url("cssFiles/images/bookATableBackground.jpg");
+            background-image: url("cssFiles/images/BATB1.jpg");
+            background-size: cover;
             overflow: hidden;
             padding: 10%;
+            animation: slider 18s infinite linear;
+        }
+        @keyframes slider {
+            0%{background-image: url("cssFiles/images/BATB1.jpg")}
+            33%{background-image: url("cssFiles/images/BATB2.png")}
+            66%{background-image: url("cssFiles/images/BATB3.png")}
+        }
+        .tableBookingPopup{
+            display: block;
+            width: 30%;
+            padding: 15px;
+            text-align: center;
+            background-image: url("cssFiles/images/BATPB.png");
+            background-size: cover;
+            border-radius: 5%;
+            transition: step-start;
+        }
+        .popupInputField{
+            width: 80%;
+            border-radius: 10%;
         }
         .pageFooter{
             background-image: url("cssFiles/images/footer-bg.jpg");
@@ -68,7 +89,7 @@
     </div>
 </nav>
 <section class="bookingSection">
-    <form style="border-radius: 10%; padding: 30px; background-color: blueviolet; text-align: center; width: 300px" id="bookingPopup">
+    <form class="tableBookingPopup">
         <h3 style="
                 text-align: center;
                 color: white;
@@ -93,6 +114,10 @@
         </input>
         <br>
         <br>
+        <input type="number" name="numberOfPeople" placeholder="Number of people" class="popupInputField">
+        </input>
+        <br>
+        <br>
         <input type="date" name="date" placeholder="mm/dd/yyyy" class="popupInputField">
         </input>
         <br>
@@ -112,7 +137,7 @@
                     color: white;
                     padding: 12px;
                     border-radius: 15px">
-                Book now!
+                Book for your party!
             </button>
         </div>
         <br>
