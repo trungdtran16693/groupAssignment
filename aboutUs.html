@@ -10,9 +10,20 @@
         .aboutUsSection{
             position: relative;
             z-index: 1;
-            color: saddlebrown;
+            color: black;
+            font-size: 20px;
         }
+        .pageFooter{
+            background-image: url("cssFiles/images/footer-bg.jpg");
+            overflow: hidden;
+            padding: 20px;
+        }
+    </style>
+    <style>
         .aboutUsSection:before{
+            background-image: url("cssFiles/images/bookATableBackground.jpg");
+            animation: slider 15s infinite linear;
+            background-size: cover;
             content: "";
             position: absolute;
             z-index: -1;
@@ -20,13 +31,12 @@
             bottom: 0;
             left: 0;
             right: 0;
-            background-image: url("cssFiles/images/aboutUsBackground.jpg");
-            opacity: .3;
+            opacity: .6;
         }
-        .pageFooter{
-            background-image: url("cssFiles/images/footer-bg.jpg");
-            overflow: hidden;
-            padding: 20px;
+        @keyframes slider {
+            10%{background-image: url("cssFiles/images/aboutUsBackground.jpg")}
+            40%{background-image: url("cssFiles/images/bookATableBackground.jpg")}
+            80%{background-image: url("cssFiles/images/slide6.jpg")}
         }
     </style>
 </head>
@@ -47,6 +57,8 @@
     &nbsp;
     &nbsp;
     &nbsp;
+
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
@@ -56,7 +68,7 @@
                 <a class="nav-link" href="aboutUs.html">ABOUT US</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" class="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     OUR MENU
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -65,7 +77,7 @@
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" class="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     BLOG
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
